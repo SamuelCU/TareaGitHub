@@ -18,6 +18,7 @@ public class Main {
         System.out.println("Seleccione la operación:");
         System.out.println("1. Suma");
         System.out.println("2. Resta");
+	System.out.println("3. Multiplicación");
 
         // Leer la opción del usuario
         int opcion = dato.nextInt();
@@ -34,6 +35,10 @@ public class Main {
                 resultado = numero1 - numero2;
                 System.out.println("Resultado de la resta: " + resultado);
                 break;
+	    case 3:
+		resultado = numero1 * numero2;
+		System.out.println("Resultado de la multiplicación: " + resultado);
+		break;
             default:
                 System.out.println("Opción no válida");
         }
